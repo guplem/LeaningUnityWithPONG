@@ -10,6 +10,7 @@ public class DiscoController : MonoBehaviour
     void Awake()
     {
         movimientoDisco = GetComponent<MovimientoDisco>();
+        GameManager.instance.discoController = this;
     }
     
     void Start()
